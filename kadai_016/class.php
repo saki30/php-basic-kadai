@@ -18,22 +18,13 @@
                 $this->price = $price;
             }
 
-            public function set_name(string $name) {
-                $this->name = $name;
-            }
-
-            public function show_name() {
-                echo $this->name . '<br>';
-            }
-
-            public function get_price() {
-                return $this->price;
+            public function show_price() {
+                echo $this->price . '<br>';
             }
         }
 
         $potato = new Food('potato', 250);
-
-        echo 'Food Price: ' . $potato->get_price() . '<br>';
+        $potato->show_price();
         print_r($potato);
 
         class Animal {
@@ -47,23 +38,14 @@
                 $this->weight = $weight;
             }
 
-            public function set_name(string $name) {
-                $this->name = $name;
-            }
-
             public function show_height() {
                 echo $this->height . '<br>';
-            }
-
-            public function get_height() {
-                return $this->height;
             }
         }
 
         $dog = new Animal('dog', 60, 5000);
         echo '<br>';
-
-        echo 'Animal Height: ' . $dog->get_height() . '<br>';
+        $dog->show_height();
         print_r($dog);
         ?>
     </p>
